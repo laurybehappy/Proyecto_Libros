@@ -1,0 +1,476 @@
+*{
+    box-sizing: border-box;
+    background-color: #FEF5EE;
+    margin: 0;
+}
+
+/********************Menu*********************/
+.menu_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Philosopher', sans-serif;
+    color: #55281D;
+    align-items: center;
+    margin: 1em;
+}
+.logo{
+    margin-left: 1.2em;
+    font-size: 1.5vw;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: #55281D;
+}
+
+ul a {
+    text-decoration: none;
+    margin: 1em;
+    font-size: 1.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #55281D;
+}
+
+ul a:hover{
+    color: #D28C8B ;
+}
+.active{
+    color: #D28C8B ;
+}
+.button{
+    border: 2px solid white;
+    background-color: #C2E3D8;
+}
+
+.button a{
+    background-color: transparent;
+}
+.button:hover{
+    background-color: white;
+    border-color: #98BEB1;
+    color: #98BEB1;
+}
+.button a:hover{
+    background-color: white;
+}
+label{
+    display: none;
+}
+/**************************/
+
+.logo{
+    background-image: url("../img/logo2.png");
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    padding: 2em;
+}
+
+.search{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+}
+.search input{
+    width: 20vw;
+    height: 2.5vw;
+    padding: 1vw;
+    border: none;
+    background-color: white;
+    border-radius: 50vw 0 0 50vw;
+    font-size: 0.9vw;
+}
+
+.search button{
+    width: 3.8vw;
+    height: 2.5vw;
+    border: none;
+    background-color: #D28C8B;
+    border-radius: 0 50vw 50vw 0;
+}
+.search img{
+    width: 1.5vw;
+    align-items: center;
+    background-color: #D28C8B;
+}
+
+hr{
+    border: 1px solid white;
+}
+.menu_secundario ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1vw;
+    margin: 1vw;
+    cursor: pointer;
+}
+.menu_secundario li:hover{
+    color: #D28C8B;
+}
+
+h2{
+    text-align: center;
+    font-size: 2vw;
+    color: #55281d; 
+    margin: 5vw;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.3vw;
+    color: #55281d; 
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 100;
+    margin-top: 5em;
+}
+
+.libros{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+}
+.book{
+    font-size: 0.9vw;
+    cursor: pointer;
+}
+.book img{
+    width: 20vw;
+}
+
+.libros_row1{
+   display: grid;
+   grid-template-columns: repeat(4, 20vw);
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.libros_row2{
+    display: grid;
+   grid-template-columns: repeat(4, 20vw);
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-top: 2vw;
+}
+
+.textoLibro{
+    display: grid;
+   grid-template-columns: repeat(1, 10vw);
+   justify-content: center;
+   align-items: center;
+   
+}
+.titulo{
+    font-weight: bolder;
+    margin-bottom: 1em;
+    width: 10vw;
+    text-align: center;
+}
+/**********************************/
+/*************FOOTER************/
+
+.redes{
+    display: flex;
+    margin-top: 4vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #C2E3D8;
+    
+}
+.redes img{
+    background-color: #C2E3D8;
+    margin: 1.3vw;
+    width: 2.5vw;
+    cursor: pointer;
+}
+.redes hr{
+    height: 1px;
+    width: 35vw;
+}
+.textFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C2E3D8;
+    font-family: 'Philosopher', sans-serif;
+    
+}
+
+.textFooter{
+    color: #55281d; 
+    
+}
+ .textFooter h3{
+    background-color: #C2E3D8;
+    font-size: 1vw;
+    font-weight: bold;
+    margin: 1vw;
+}
+.textF, .textF span{
+    background-color: #C2E3D8;
+    margin: 0.5vw;
+    padding-bottom: 1vw;
+    font-size: 0.9vw;
+    cursor: pointer;
+}
+/***********************/
+
+/*********Responsive*********/
+
+@media (max-width: 1024px){
+
+    .logo{
+        font-size: 2vw;
+        margin-left: 1.2em;
+    }
+    ul li a{
+        font-size: 1.3vw;
+    }
+    h3{
+        font-size: 2vw;;
+    }
+    .menu_secundario ul li{
+        font-size: 1.3vw;
+    }
+    h2{
+        margin-top: 7vw;
+    }
+    .libros_row1{
+        display: grid;
+        grid-template-columns: repeat(2, 40vw);
+        justify-content:center;
+        align-items: center;
+    }
+    .libros_row2{
+        display: grid;
+        grid-template-columns: repeat(2, 40vw);
+        justify-content:center;
+        align-items: center;
+    }
+    
+    .book{
+        font-size: 1.3vw;
+        align-items: center;
+        text-align: center;
+    }
+    .book img{
+        width: 40vw;
+    }
+    .redes img{
+        width: 3.5vw;
+    }
+    
+    
+    .textFooter h3{
+        font-size: 1.5vw;
+    }
+    .textF, .textF span{
+        font-size: 1.2vw;
+    }
+
+}
+
+
+@media (max-width: 600px){
+    .menu_container{
+        justify-content: space-between;
+        
+    }
+    label{
+        display: block; 
+        align-self: center;  
+        padding: 1vw;
+    }
+    .logo{
+        font-size: 2.5vw;
+    }
+   
+    .menu{
+        position: absolute;
+        background-color:#ffffff;
+        width: 150px;
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+        
+    }
+    .menu ul li a, .menu label {
+        color:#55281D;
+        font-size: 2.2vw;
+        background-color: white;
+    }
+    .menu li{
+        background-color: white;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        padding: 0;
+    }
+    .menu label{
+        text-align: right;
+        background-color: white;
+    }
+    input:checked ~ .menu{
+        visibility: visible;
+        opacity: 1;
+    } 
+    .menu > ul > li > a:hover{
+        color:#D28C8B;
+    }
+   a .active{
+    color: #D28C8B;
+   }
+
+   .fa-x{
+    background-color: white;
+   }
+   .text{
+    font-size: 3vw;
+   }
+   
+   .search input{
+    width: 35vw;
+    height: 3.5vw;
+    padding: 1.5vw;
+    font-size: 1.3vw;
+}
+
+.search button{
+    width: 4.5vw;
+    height: 3.5vw;
+}
+
+.menu_secundario ul li{
+    font-size: 2vw;
+}
+h2{
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+h3{
+font-size: 2.5vw;
+}
+.book{
+    font-size: 2vw;
+}
+.book img{
+    width: 50vw;
+}
+.libros_row1{
+   grid-template-columns: repeat(2, 50vw);
+   justify-content:center;
+
+}
+.libros_row2{
+   grid-template-columns: repeat(2, 50vw);
+   justify-content:center;
+
+}
+
+.redes img{
+    width: 5.5vw;
+}
+.redes hr{
+    height: 1px;
+    width: 30vw;
+}
+
+ .textFooter h3{
+    font-size: 2.5vw;   
+}
+.textF, .textF span{
+    font-size: 2vw;
+}
+
+}
+
+@media (max-width: 425px) {
+    .logo{
+        font-size: 3.5vw;
+        margin: 0;
+        padding: 5vw;
+        
+    }
+    .menu ul li a{
+        font-size: 3.5vw;
+    }
+    .menu_secundario ul li{
+        font-size: 3vw;
+    }
+    .search input{
+        width: 40vw;
+        height: 5.5vw;
+        padding: 2.5vw;
+        font-size: 1.8vw;
+    }
+    
+    .search button{
+        width: 5.5vw;
+        height: 5.5vw;
+    }
+    .search img{
+        width: 2.3vw;
+    }
+    label{
+        margin-left: 2.5vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    h3{
+        font-size: 3.5vw;
+    }
+    .book{
+        font-size: 3vw;
+        margin-bottom: 3vw;
+    }
+    .book img{
+        width: 80vw;
+    }
+    .libros_row1{
+       grid-template-columns: repeat(1, 80vw);
+    }
+    .libros_row2{
+       grid-template-columns: repeat(1, 80vw);
+    }
+    .textoLibro{
+       grid-template-columns: repeat(1, 30vw);       
+    }
+    .titulo{
+        font-weight: bolder;
+        margin-bottom: 1em;
+        width: 30vw;
+        text-align: center;
+    }
+   
+    .redes img{
+        margin-top: 2.5vw;
+        width: 7vw;
+    }
+    .redes hr{
+        height: 1px;
+        width: 25vw;
+    }
+    
+     .textFooter h3{
+        font-size: 3.2vw;   
+    }
+    .textF, .textF span{
+        font-size: 2.6vw;
+    }
+}

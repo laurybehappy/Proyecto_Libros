@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/search.css" as="style" media="all">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0e9d9e5ddf.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="menu_container">
+        <div class="logo">Jardin de Lectura</div>
+        <div class="search">
+            <input type="search" id="site_search" placeholder="Buscar por autor, titulo, género..."/>
+            <button><img src="./img/lupa.png" loading="lazy" alt="lupa-busqueda" width="200"></button>
+        </div>
+        <input type="checkbox" id="menu_check" hidden>
+        <label for="menu_check">
+                <i class="fa-solid fa-bars" style="color: #55281D;"></i>
+        </label>
+        <nav class="menu">
+            <label for="menu_check">
+                <i class="fa-solid fa-x"></i>
+            </label>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a class="active" href="busqueda.html">Búsqueda</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li class="button"><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+    <nav class="menu_secundario">
+        <ul>
+            <li>Categorías</li>
+            <li>Imprescindibles</li>
+            <li>Mi lista</li>
+        </ul>
+    </nav>
+    <hr>
+    </header>
+    <section>
+        <h2 class="populares">POPULARES ESTA SEMANA</h1>
+        <div class="libros">
+            <div class="libros_row1">
+                <div class="book">
+                    <img src="./img/libro8.png" loading="lazy" alt="HOLLY - STEPHEN KING" title="HOLLY - STEPHEN KING" width="200">
+                    <div class="textoLibro">
+                        <span class="titulo">HOLLY</span>
+                        <span>STEPHEN KING</span>
+                    </div>
+                </div>
+                <div class="book">
+                    <img src="./img/libro7.png" loading="lazy" alt="¿TU LO HARIAS? - MEGAN MAXWELL" title="¿TU LO HARIAS? - MEGAN MAXWELL" width="200">
+                    <div class="textoLibro">
+                        <span class="titulo">¿TU LO HARIAS?</span>
+                        <span>MEGAN MAXWELL</span>
+                    </div>
+                </div>
+                <div class="book">
+                    <img src="./img/libro6.png" loading="lazy" alt="LA BIBLIOTECA DE LA MEDIANOCHE - MATT HAIG" title="LA BIBLIOTECA DE LA MEDIANOCHE - MATT HAIG" width="200">
+                    <div class="textoLibro">
+                    <span class="titulo"> LA BIBLIOTECA DE LA MEDIANOCHE </span>
+                    <span>MATT HAIG</span>
+                </div>
+                </div>
+                <div class="book">
+                    <img src="./img/libro5.png" loading="lazy" alt="1984 - GEORGE ORWELL" title="1984 - GEORGE ORWELL" width="200">
+                    <div class="textoLibro">
+                    <span class="titulo">1984</span>
+                    <span>GEORGE ORWELL</span>
+                </div>
+                </div>
+            </div>
+            <h3>Libros de ficcion más leídos</h3>
+            <div class="libros_row2">
+                <div class="book">
+                    <img src="./img/libro4.png" loading="lazy" alt="COMO NO ESCRIBÍ NUESTRA HISTORIA - ELISABET BENAVENT" title="COMO NO ESCRIBÍ NUESTRA HISTORIA - ELISABET BENAVENT" width="200">
+                    <div class="textoLibro">
+                    <span class="titulo"> COMO NO ESCRIBÍ NUESTRA HISTORIA</span>
+                    <span>ELISABET BENAVENT</span>
+                </div>
+                </div>
+                <div class="book">
+                    <img src="./img/libro3.png" loading="lazy" alt="CHOQUE DE REYES - GEORGE R.R. MARTIN" title="CHOQUE DE REYES - GEORGE R.R. MARTIN" width="200">
+                    <div class="textoLibro">
+                        <span class="titulo">CHOQUE DE REYES</span>
+                        <span>GEORGE R.R. MARTIN</span>
+                    </div>
+                    
+                </div>
+                <div class="book">
+                    <img src="./img/libro1.png" loading="lazy" alt="EL GUARDIÁN ENTRE EL CENTENO - J.D. SALINGER" title="EL GUARDIÁN ENTRE EL CENTENO - J.D. SALINGER" width="200">
+                    <div class="textoLibro">
+                    <span class="titulo">EL GUARDIÁN ENTRE EL CENTENO</span>
+                    <span>J.D. SALINGER</span>
+                </div>
+                </div>
+                <div class="book">
+                    <img src="./img/libro2.png" loading="lazy" alt=" LOS PILARES DE LA TIERRA - KEN FOLLET" title="LOS PILARES DE LA TIERRA - KEN FOLLET" width="200">
+                    <div class="textoLibro">
+                    <span class="titulo">LOS PILARES DE LA TIERRA</span>
+                    <span>KEN FOLLET</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+            <div class="redes">
+                <hr>
+                    <img src="./img/gorjeo.png" loading="lazy" alt="Twitter" title="Twitter" width="200">
+                    <img src="./img/facebook.png" loading="lazy" alt="Facebook" title="Facebook" width="200">
+                    <img src="./img/instagram.png" loading="lazy" alt="Instagram" title="Instagram" width="200">
+                    <img src="./img/tik-tok.png" loading="lazy" alt="tik-tok" title="tik-tok" width="200">
+                <hr>
+            </div>
+            <div class="textFooter">
+                <h3>JARDIN DE LECTURA</h3>
+                <div class="textF">
+                    <span>Quienes somos</span>
+                    <span>Política de privacidad</span>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

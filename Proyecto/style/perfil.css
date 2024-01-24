@@ -1,0 +1,495 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: grid;
+    grid-template-columns: 20vw;
+    background-color: #FEF5EE;
+    font-family: 'Philosopher', sans-serif;
+    height: 100vh;
+}
+header{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: #C2E3D8;
+    height: 100vh;
+    padding: 2em;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    width: 20vw;
+}
+.user{
+    display: flex;
+    margin: 2em;
+    align-items: center;
+}
+.user img{
+    margin-right: 1em;
+    width: 4vw;
+}
+.user h1{
+    font-size: 2vw;
+    font-weight: lighter;
+}
+.menu{
+    width: auto;
+    margin-top: -10vw;
+}
+.menu ul{
+    padding: 0;
+}
+.active{
+    background-color: #98BEB1;
+}
+.menu ul li{
+    list-style-type: none;
+   display: flex;
+   align-items: center;
+   margin: 0.5vw;
+   padding-left: 3vw;
+   width: 15vw;
+   border-radius: 10px;
+}
+.menu ul li:hover{
+    background-color: #98BEB1;
+}
+.menu ul li a, a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+    font-size: 1.2vw;
+}
+a img{
+    margin-right: 1vw;
+}
+img{
+    width: 1.5vw;
+}
+
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inicio img{
+    height: 1.5vw;
+}
+
+section{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+ .titulo{
+    padding: 5vw;
+    text-align: center;
+    font-size: 2.5vw;
+    color: #D28C8B;
+}
+.crono{
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+hr{
+    border: 1px solid white;
+}
+.crono{
+    background-color: #fbece6;
+}
+.libroImg{
+    width: 8vw;
+    margin-right: 2vw;
+}
+
+.libro1, .libro2{
+    display: flex;
+    align-items: center; 
+}
+
+.libro1{
+    background-color: #f4e8e0;
+    margin-left: 3vw;
+    margin-top: 3vw;
+    width: 80%;
+    border-radius: 2vw;
+    cursor: pointer;
+    padding: 1.5vw;
+}
+.libro2{
+    margin-left: 3vw;
+    margin-top: 3vw;
+    cursor: pointer;
+    padding: 1.5vw;
+}
+
+.libroText{
+    display: flex;
+    flex-direction: column;
+    color: #D28C8B;
+    font-size: 0.9vw;
+    
+}
+.libroText span:nth-child(1){
+    font-weight: bold;
+}
+.libroText span:nth-child(2){
+    font-family: 'Quicksand', sans-serif;
+}
+.libroText p{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.crono{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cronometro{
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    height: 20vw;
+    align-items: center;
+    border-radius: 50%;
+    border: 15px dashed #D28C8B;
+    
+}
+.cronometro h2{
+    font-size: 3vw;
+    font-family: 'Quicksand', sans-serif;
+    color: #D28C8B;
+}
+.botones{
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botones img{
+    width: 3vw;
+    margin: 3vw;
+    cursor: pointer;
+}
+.botonStart{
+    padding: 0.5vw;
+    font-size: 0.9vw;
+    width: 15vw;
+    border-radius: 2vw;
+    color: white;
+    background-color: #edc4c3;
+    border: 1px solid white;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+.botonStart:hover{
+    background-color: #D28C8B;
+}
+
+/**********RESPONSIVE********/
+
+@media (max-width: 1440px){
+    .titulo{
+        font-size: 4vw;
+    }
+    .user h1{
+        font-size: 2.5vw;
+    }
+    li p{
+        font-size: 1.5vw;
+    }
+    .libroText{
+        font-size: 1.2vw;
+    }
+    .cronometro{
+        width: 25vw;
+        height: 25vw;        
+    }
+    .cronometro h2{
+        font-size: 4vw;
+    }
+    .botonStart{
+        padding: 0.5vw;
+        font-size: 1.3vw;
+    }
+    .botones img{
+        width: 4vw;
+        margin: 4vw;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .user img{
+        width: 8vw;
+        margin: 0;
+    }
+    .user h1{
+        display: none;
+    }
+    a p{
+        display: none;
+    }
+   .menu ul li a img{
+        width: 3.5vw;
+        height: 3.6vw;
+    }
+    .menu ul li{
+       margin: 1.5vw;
+       padding-left: 1vw;
+       width: 7.5vw;
+       border-radius: 10px;
+    }
+    .inicio a img{
+        width: 4vw;
+        height: 4vw;
+    }
+    header{
+        width: 13vw;
+    }
+    body{
+        display: grid;
+        grid-template-columns: 13vw;
+        background-color: #FEF5EE;
+        font-family: 'Philosopher', sans-serif;
+    }
+    .titulo{
+        font-size: 5vw;
+    }
+    .libro2, .libro1{
+        width: 85%;
+    }
+    
+    .libroText{
+        font-size: 1.5vw;
+    }
+    .libroImg{
+        width: 13vw;
+    }
+    .cronometro{
+        width: 32vw;
+        height: 32vw;        
+    }
+    .cronometro h2{
+        font-size: 5vw;
+    }
+    .botonStart{
+        padding: 0.8vw;
+        font-size: 2vw;
+        width: 25vw;
+    }
+    .botones img{
+        width: 6vw;
+        margin: 4vw;
+        cursor: pointer;
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+header{
+    height: 200%;
+}
+
+section, .crono{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.titulo{
+    padding: 5vw;
+}
+.crono{
+    background-color: transparent;
+    margin-top: -5vw;
+}
+.cronometro{
+    width: 40vw;
+    height: 40vw;
+}
+.libro2{
+    display: none;
+}
+.libro1{
+    margin-left: 4.5vw;
+    margin-top: 4vw;
+    width: 90%;
+    padding: 2vw;
+}
+.libroImg{
+    width: 18vw;
+}
+.libroText{
+    font-size: 2.2vw;
+    margin-left: 1.5vw;
+}
+p img{
+   width: 2.5vw;
+}
+.menu ul li a img{
+    width: 4.5vw;
+    height: 4.5vw;
+}
+.menu ul li{
+    margin: 1.5vw;
+    padding-left: 1vw;
+    width: 8.2vw;
+    border-radius: 10px;
+ }
+ .cronometro h2{
+    font-size: 6.2vw;
+}
+.botonStart{
+    padding: 0.8vw;
+    font-size: 2.7vw;
+    width: 30vw;
+}
+.botones img{
+    width: 8vw;
+    margin: 4vw;
+    cursor: pointer;
+    background-color: #D28C8B;
+    border-radius: 50px;
+}
+}
+
+@media (max-width: 600px) {
+body{
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: space-between;
+}
+header{
+    display: none;
+}
+
+section, .crono, .menu-oculto{
+    grid-column-start: 1;
+}
+.menu-oculto{
+    display: inline;
+}
+.crono{
+    margin-top: 10vw;
+}
+.menu-oculto ul{
+    grid-row-start: 2;
+    width: 100vw;
+    background-color: #C2E3D8;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+.menu-oculto ul li a img{
+    width: 10vw;
+    padding: 1vw;
+    margin-left: 1vw;
+}
+hr {
+    display: none;
+}
+.titulo{
+    font-size: 8vw;
+    margin-top: 5vw;
+}
+.libroImg{
+    width: 25vw;
+}
+.libroText{
+    font-size: 3vw;
+}  
+.cronometro{
+    width: 55vw;
+    height: 55vw;
+}
+.cronometro h2{
+    font-size: 8vw;
+}
+.botonStart{
+    padding: 0.8vw;
+    font-size: 4vw;
+    width: 35vw;
+    margin-bottom: 10vw;
+}
+.botones img{
+    width: 12vw;
+    margin: 10vw;
+    cursor: pointer;
+    background-color: #D28C8B;
+    border-radius: 50px;
+}
+}
+@media (max-width: 455px) {
+    .menu-oculto{
+        width: 100vw;
+        display: flex;
+        padding: 0;
+    }
+    .menu-oculto ul{
+        height: 12vw;
+        width: 100vw;
+        display: flex;
+        padding: 0;
+    }
+    .cronometro{
+        width: 65vw;
+        height: 65vw;
+    }
+    .botones img{
+        width: 15vw;
+        margin: 10vw;
+    }
+    .botonStart{
+        padding: 0.8vw;
+        font-size: 5vw;
+        width: 45vw;
+        margin-bottom: 10vw;
+    }
+    .cronometro h2{
+        font-size: 10vw;
+    }
+    .titulo{
+        font-size: 10vw;
+        margin-top: 6vw;
+    }
+    .libroImg{
+        width: 30vw;
+    }
+    .libroText{
+        font-size: 3.5vw;
+    }
+    .libroText p img{
+        width: 3.5vw;
+    }  
+}
+@media (max-width: 455px) {
+    .cronometro{
+        width: 75vw;
+        height: 75vw;
+    }
+    .botones img{
+        width: 17vw;
+        margin: 12vw;
+    }
+    .botonStart{
+        padding: 0.8vw;
+        font-size: 5vw;
+        width: 45vw;
+        margin-bottom: 10vw;
+    }
+    .cronometro h2{
+        font-size: 10vw;
+    }
+
+}

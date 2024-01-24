@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil</title>
+    <link rel="stylesheet" href="./style/perfil.css" as="style" media="all">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0e9d9e5ddf.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="user">
+            <img src="./img/usuario.png" loading="lazy" alt="usuario">
+            <h1>Nombre</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li class="active"><a href="perfil.html"><img src="./img/libro-abierto.png" alt="Libros" title="Libros" width="200"><p>Libros</p></a></li>
+                <li><a href=""><img src="./img/favorito(1).png" loading="lazy" alt="Favoritos" title="Favoritos" width="200"><p>Favoritos</p></a></li>
+                <li><a href=""><img src="./img/boton-de-verificacion.png" loading="lazy" alt="Terminados" title="Terminados" width="200"><p>Terminados</p></a></li>
+                <li><a href=""><img src="./img/pino.png" loading="lazy" alt="Jardin" title="Jardin" width="200"><p>Jardín</p></a></li>
+                <li><a href=""><img src="./img/grafico-de-barras.png" loading="lazy" alt="Estadisticas" title="Estadisticas" width="200"><p>Estadisticas</p></a></li>
+            </ul>
+        </nav>
+        <div class="inicio">
+            <a href="./index.html"><img src="./img/flecha-correcta(1).png" loading="lazy" alt="Volver al Inicio" title="Volver al inicio" width="200"><p>Volver al inicio</p></a>
+        </div>
+    </header>
+    <section>
+        <h1 class="titulo">Libros</h1>
+        <div class="libros">
+        <hr>
+            <div class="libro1" >
+                    <img class="libroImg" src="./img/alice.png" loading="lazy" width="200" alt="33 Razones para volver a verte - Alice Kellen" title="33 Razones para volver a verte - Alice Kellen">
+                    <div class="libroText">
+                        <span>33 Razones para volver a verte</span>
+                        <span>Alice Kellen</span>
+                        <p><img src="./img/dinero.png" loading="lazy" alt="monedas" width="200">50</p>
+                    </div>
+            </div>
+            <div class="libro2">
+                <img class="libroImg" src="./img/elisa.png" loading="lazy" alt="Mi Isla - Elisabet Benavent" title="Mi Isla - Elisabet Benavent" width="200">
+                <div class="libroText">
+                <span>Mi Isla</span>
+                <span>Elisabet Benavent</span>
+                <p><img src="./img/dinero.png" loading="lazy" alt="monedas" width="200">70</p>
+            </div>
+            </div>
+    </section>
+    <section class="crono">
+            <div class="cronometro">
+                <h2>00:30</h2>
+            </div>
+            <div class="botones">
+                <div class="botonesP">
+                    <img src="./img/boton-de-play.png" loading="lazy" alt="Empezar cronometro" title="Empezar cronometro" width="200">
+                    <img src="./img/pausa.png" loading="lazy" alt="Parar cronometro" title="Parar cronometro" width="200">
+                </div>
+                <button class="botonStart">Empezar</button>
+            </div>           
+    </section>
+    <nav class="menu-oculto" hidden>
+        <ul>
+            <li><a href="./index.html"><img src="./img/flecha-correcta(1).png" loading="lazy" alt="Volver al inicio" title="Volver al inicio" width="200"></a></li>
+            <li class="active"><a href="perfil.html"><img src="./img/libro-abierto.png" loading="lazy" alt="Libros" title="Libros" width="200"></a></li>
+            <li><a href=""><img src="./img/pino.png" loading="lazy" alt="Jardin" title="Jardin" width="200"></a></li>
+            <li><a href=""><img src="./img/usuario.png" loading="lazy" alt="Perfil" title="Perfil" width="200"></a></li>
+            
+        </ul>
+    </nav>
+</body>
+</html>
